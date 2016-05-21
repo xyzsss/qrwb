@@ -1,0 +1,20 @@
+$def with (todos)
+    <h3 align="center"> Input the url and the context ,then "Enter" </h3>
+<p style="margin-left:30%; margin-top:3%">
+<form method="post" action="create">
+picture http url:<input type="text" name="title" /> <br/>
+eg: http://www.xxx.com/logo.jpg<br/>
+the context hidden in the picture:<input type="text" name="content" /> <input type="submit" value="Generate NOW" />
+</form>
+</p>
+<br/><br/>
+<table>
+$for todo in todos:
+    <tr style="float:left;">
+    <td style="float:left;" width="233px" height="233px">
+    <img src="$todo[3]" alt="$todo[3]" height="133" width="133">
+    <a href="$todo[1]"> Original  </a> : <a href="$todo[3]"> $todo[2] </a>
+    </td>
+    </tr>
+</table>
+
