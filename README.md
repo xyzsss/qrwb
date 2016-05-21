@@ -6,12 +6,13 @@ web qr generator
 [CuteR](https://github.com/chinuno-usami/CuteR)
 
 #### file list
+```
 init_dir.py    # init the directory
 qr.py    # main file
 qr.db    # sqlite datafile
 template/qres.html    # the frontend file
 template/qrres.html    # the 404 page file
-
+```
 
 #### 1. env requirement
 ```
